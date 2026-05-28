@@ -3,89 +3,501 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Mekhala Pondala | Portfolio</title>
+    <title>Sai Mekhala Pondala | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Sai Mekhala Pondala</h1>
-        <p>Software Engineer | Full‑Stack | Automation | GenAI</p>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">SMP</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m Sai Mekhala Pondala, a Software Engineer with a strong foundation in full‑stack development, automation engineering, and GenAI‑assisted problem solving. I thrive at the intersection of engineering precision and creative problem‑solving, and I enjoy building systems that make complex workflows simpler, faster, and more reliable. My experience spans across backend/API engineering, UI development, automation frameworks, and cloud‑based integrations, giving me a well‑rounded perspective on how modern applications are designed, built, tested, and scaled. I’m particularly passionate about using AI and automation to eliminate repetitive tasks, improve engineering efficiency, and enhance product quality.</p>
-        <p> My engineering journey began with a Bachelor of Technology in Computer Science and Engineering (2017–2021) from Sri Padmavati Mahila Visvavidyalayam, Tirupati, where I built a strong technical foundation and developed values of discipline, consistency, and curiosity. Upon graduation, I was offered a position at Capgemini, Hyderabad, where I worked for 2.5 years (Aug 2021 – Dec 2023) as an Automation and Backend Engineer. This role exposed me to enterprise‑scale systems and taught me the importance of precision, collaboration, and ownership in engineering.</p>
-        <p> I later joined DO Systems Inc. as a Backend Developer, contributing to automation frameworks, API validation, and system integration projects. Working closely with cross‑functional teams strengthened my understanding of scalable backend design, cloud workflows, and real‑world engineering challenges.</p>
-        <p> Driven by a desire to deepen my expertise and explore emerging technologies, I began my Master’s journey in the United States. As a graduate student, I was exposed to diverse perspectives, advanced coursework, and hands‑on projects that expanded my understanding of modern software engineering and AI‑driven solutions. I successfully completed my Master of Science in Computer and Information Sciences from Florida Atlantic University on May 2nd, 2025, an experience that shaped both my technical growth and my confidence as an engineer ready to take on complex, impactful challenges.</p>
-        <p> Beyond the technical side, I value communication, collaboration, and continuous learning. I enjoy working in environments where ideas flow freely, problems are tackled thoughtfully, and innovation is encouraged. My goal is to contribute to teams that build meaningful, scalable products — and to keep growing as an engineer who blends strong fundamentals with modern, AI‑driven innovation.</p>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <span class="hero-eyebrow">✦ Available for opportunities</span>
+                <h1 class="hero-name">
+                    Hello, I'm<br>
+                    <span class="hero-name-main">Sai Mekhala</span><br>
+                    <em>Pondala</em>
+                </h1>
+                <p class="hero-role">Software Engineer &mdash; Full‑Stack · Automation · GenAI</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-outline">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap">
+                <div class="hero-photo-deco"></div>
+                <div class="hero-photo-frame">
+                    <img src="profile.jpeg" alt="Sai Mekhala Pondala" class="hero-photo">
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-word">ENGINEER</div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-bar"></div>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Java, Python, JavaScript, TypeScript</li>
-            <li>Angular, React</li>
-            <li>Node.js, REST APIs, SQL, MongoDB</li>
-            <li>Selenium, TestNG, Jenkins, GitLab CI</li>
-            <li>Azure, AWS, GCP (Familiarity)</li>
-            <li>GenAI, LLM Prompting, Vector Search</li>
-        </ul>
+    <!-- ABOUT -->
+    <section class="section section-about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo-col reveal">
+                    <div class="about-photo-frame">
+                        <img src="about.jpeg" alt="About Sai Mekhala" class="about-photo">
+                        <div class="about-photo-accent"></div>
+                    </div>
+                </div>
+                <div class="about-text-col reveal">
+                    <div class="section-label">01 — About</div>
+                    <h2 class="section-title">Engineer by<br><em>passion &amp; craft</em></h2>
+                    <p class="about-desc">I'm a Software Engineer specializing in full‑stack development, automation engineering, and GenAI‑powered solutions. I thrive at the intersection of engineering precision and creative problem‑solving — building systems that make complex workflows simpler, faster, and more reliable.</p>
+                    <p class="about-desc">M.S. Computer & Information Sciences, Florida Atlantic University (2025). Previously at <strong>Capgemini</strong>, Hyderabad where I earned the Star Employee award for engineering excellence.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-num">3.5+</span>
+                            <span class="stat-lbl">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">4</span>
+                            <span class="stat-lbl">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">M.S.</span>
+                            <span class="stat-lbl">FAU 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>GenAI Workflow Automation Utility</h3>
-            <p>Automated debugging and validation workflows using Python/Node.js and Azure Functions.</p>
-            <p>Engineering teams often spend a significant amount of time debugging backend workflows, validating API responses, and manually analyzing logs to identify failures or inconsistencies. These tasks are repetitive, time‑consuming, and prone to human oversight, especially when dealing with large volumes of data or complex distributed systems. To address this challenge, I built a GenAI‑powered Workflow Automation Utility that automates debugging, validation, and analysis using a combination of Python/Node.js, Azure Functions, and LLM‑based reasoning.</p>
-            <p>By replacing manual debugging with intelligent automation, the utility significantly reduced engineering turnaround time and improved consistency in issue detection. This project demonstrates how GenAI can be embedded into real engineering workflows to enhance productivity, accelerate root‑cause analysis, and support high‑velocity development teams.</p>
-        
+    <!-- SKILLS -->
+    <section class="section section-skills" id="skills">
+        <div class="container">
+            <div class="section-label reveal">02 — Skills</div>
+            <h2 class="section-title reveal">Technical<br><em>Expertise</em></h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">⌨</div>
+                    <h3>Languages</h3>
+                    <div class="skill-pills">
+                        <span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">⬡</div>
+                    <h3>Frameworks</h3>
+                    <div class="skill-pills">
+                        <span>Angular</span><span>React</span><span>Node.js</span><span>Django</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">⬢</div>
+                    <h3>Data & APIs</h3>
+                    <div class="skill-pills">
+                        <span>REST APIs</span><span>SQL</span><span>MongoDB</span><span>PostgreSQL</span><span>Snowflake</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">⚙</div>
+                    <h3>Automation & CI</h3>
+                    <div class="skill-pills">
+                        <span>Selenium</span><span>TestNG</span><span>Jenkins</span><span>GitLab CI</span><span>IBM BPM</span>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-card-icon">☁</div>
+                    <h3>Cloud & Data</h3>
+                    <div class="skill-pills">
+                        <span>Azure</span><span>AWS</span><span>GCP</span><span>Informatica</span><span>Kafka</span>
+                    </div>
+                </div>
+                <div class="skill-card skill-card-dark reveal">
+                    <div class="skill-card-icon">✦</div>
+                    <h3>GenAI</h3>
+                    <div class="skill-pills">
+                        <span>LLM Prompting</span><span>Vector Search</span><span>RAG</span><span>ChromaDB</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <h3>Business Entity Matching System</h3>
-            <p>ML pipeline using RapidFuzz + XGBoost to improve duplicate detection accuracy by 35%.</p>
-            <p>Financial institutions often maintain business records across multiple platforms, legacy systems, and third‑party data sources. Over time, this leads to duplicate entities, inconsistent naming conventions, and fragmented profiles for the same business. These inconsistencies create operational risk, affect compliance workflows, and require large amounts of manual review. Traditional rule‑based matching approaches struggled with edge cases, spelling variations, and incomplete data, making accurate entity resolution a significant challenge</p>
-            <p>To address this, I designed and implemented a machine‑learning–driven Business Entity Matching & Scoring System. The solution combines RapidFuzz for fuzzy similarity scoring with an XGBoost‑based classification model to determine whether two business records represent the same entity. I built a complete ML pipeline that handled data preprocessing, feature engineering, threshold tuning, and automated retraining. The system evaluates multiple attributes — such as business names, addresses, registration IDs, and metadata — and produces a confidence score that drives downstream decision‑making. </p>
-            <p>By integrating fuzzy matching with supervised learning, the system achieved a 35% improvement in duplicate detection accuracy, significantly reducing manual reconciliation effort. It also introduced consistent scoring logic, automated threshold management, and scalable retraining capabilities. This project strengthened data governance, improved operational efficiency, and demonstrated how ML can modernize entity resolution in financial datasets </p>
-        
-        
+    <!-- PROJECTS -->
+    <section class="section section-projects" id="projects">
+        <div class="container">
+            <div class="section-label reveal">03 — Projects</div>
+            <h2 class="section-title reveal">Selected<br><em>Work</em></h2>
+            <div class="projects-grid">
+
+                <!-- COVID-19 -->
+                <div class="project-card project-card-teal reveal" id="pc1">
+                    <div class="project-card-front">
+                        <div class="project-num">01</div>
+                        <div>
+                            <div class="project-tags">
+                                <span>Deep Learning</span><span>ResNet50</span><span>EfficientNetB0</span>
+                            </div>
+                            <h3 class="project-title">COVID‑19 X‑ray Classification</h3>
+                            <p class="project-summary">Ensemble model classifying chest X‑rays using three deep learning architectures.</p>
+                        </div>
+                        <button class="project-toggle" onclick="toggleProject('pc1')">
+                            <span class="toggle-text">Read More</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="project-expand">
+                        <p>Developed an ensemble deep‑learning model combining ResNet50, InceptionV3, and EfficientNetB0 with transfer learning to classify chest X‑ray images. Applied data augmentation and stratified evaluation to improve generalization and reduce false positives.</p>
+                        <p>This system supports clinical workflows by providing fast, consistent, and scalable image‑based screening — demonstrating how AI can assist healthcare professionals during high‑demand scenarios.</p>
+                        <div class="project-outcome">⟶ High‑accuracy screening model supporting clinical decision‑making</div>
+                        <div class="project-stack">
+                            <span>Python</span><span>TensorFlow</span><span>ResNet50</span><span>InceptionV3</span><span>EfficientNetB0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grad TA -->
+                <div class="project-card project-card-navy reveal" id="pc2">
+                    <div class="project-card-front">
+                        <div class="project-num">02</div>
+                        <div>
+                            <div class="project-tags">
+                                <span>Django</span><span>React</span><span>PostgreSQL</span>
+                            </div>
+                            <h3 class="project-title">Graduate TA Management System</h3>
+                            <p class="project-summary">Full‑stack platform automating university TA scheduling and assignment workflows.</p>
+                        </div>
+                        <button class="project-toggle" onclick="toggleProject('pc2')">
+                            <span class="toggle-text">Read More</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="project-expand">
+                        <p>Built a full‑stack platform using Django, PostgreSQL, MongoDB, and React to replace spreadsheet‑based TA assignment workflows. Includes role‑based access for administrators, faculty, and TAs, automated scheduling logic, conflict detection, and real‑time updates.</p>
+                        <p>The responsive React UI improved usability while Django APIs handled backend validation and data consistency across relational and NoSQL databases.</p>
+                        <div class="project-outcome">⟶ 40% reduction in manual coordination effort</div>
+                        <div class="project-stack">
+                            <span>Django</span><span>React</span><span>PostgreSQL</span><span>MongoDB</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinical Summary -->
+                <div class="project-card project-card-gold reveal" id="pc3">
+                    <div class="project-card-front">
+                        <div class="project-num">03</div>
+                        <div>
+                            <div class="project-tags">
+                                <span>GPT‑4o</span><span>RAG</span><span>ChromaDB</span>
+                            </div>
+                            <h3 class="project-title">Smart Clinical Summary Agent</h3>
+                            <p class="project-summary">AI agent generating clinical patient summaries using RAG, GPT‑4o, and OpenFDA.</p>
+                        </div>
+                        <button class="project-toggle" onclick="toggleProject('pc3')">
+                            <span class="toggle-text">Read More</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="project-expand">
+                        <p>Built a patient summary agent that ingests data from 5 CSV sources, computes a risk score, retrieves drug info from OpenFDA, and uses GPT‑4o‑mini for symptom intelligence. An ETL pipeline processes 49,000+ text chunks into ChromaDB vector embeddings for semantic retrieval (RAG approach).</p>
+                        <p>Outputs a structured JSON with patient details, risk scoring, medication safety info, and a professional 4‑6 sentence clinical narrative generated via prompt engineering.</p>
+                        <div class="project-outcome">⟶ End-to-end clinical AI pipeline with 8 structured outputs</div>
+                        <div class="project-stack">
+                            <span>Python</span><span>GPT‑4o‑mini</span><span>ChromaDB</span><span>OpenFDA API</span><span>pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Med Scanner -->
+                <div class="project-card project-card-terra reveal" id="pc4">
+                    <div class="project-card-front">
+                        <div class="project-num">04</div>
+                        <div>
+                            <div class="project-tags">
+                                <span>Flask</span><span>GPT‑4o Vision</span><span>SQLite</span>
+                            </div>
+                            <h3 class="project-title">Medication Scanner</h3>
+                            <p class="project-summary">Web app that scans medication labels with AI vision and retrieves FDA drug info.</p>
+                        </div>
+                        <button class="project-toggle" onclick="toggleProject('pc4')">
+                            <span class="toggle-text">Read More</span>
+                            <span class="toggle-icon">+</span>
+                        </button>
+                    </div>
+                    <div class="project-expand">
+                        <p>A Flask web application where users upload or capture a medication label photo. GPT‑4o Vision reads the label and returns structured JSON with drug name, dosage, and warnings. OpenFDA API enriches results with purpose, side effects, and adverse reactions. Scan history is stored in SQLite with automatic 5‑day expiry.</p>
+                        <p>Handles 8+ edge cases including blurry/angled photos, wrong file types, webcam unavailability, and drugs not found in the FDA database.</p>
+                        <div class="project-outcome">⟶ Real-time AI-powered medication safety lookup with robust error handling</div>
+                        <div class="project-stack">
+                            <span>Flask</span><span>Python</span><span>GPT‑4o Vision</span><span>SQLite</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <h3>COVID‑19 X‑ray Classification</h3>
-            <p>Ensemble deep learning model using ResNet50, InceptionV3, EfficientNetB0.</p>
-             <p>During the early stages of the pandemic, radiologists faced overwhelming workloads and inconsistent access to rapid diagnostic tools. Manual interpretation of chest X‑rays was time‑consuming and prone to variability, especially when distinguishing COVID‑19 from other respiratory conditions. To address this challenge, I developed an ensemble deep‑learning model capable of classifying chest X‑ray images with high accuracy and reliability.</p>
-             <p>The system combines ResNet50, InceptionV3, and EfficientNetB0, leveraging transfer learning to extract robust features from limited medical datasets. I applied extensive data augmentation to improve generalization and reduce overfitting, and used stratified evaluation metrics to ensure balanced performance across classes. The ensemble approach aggregates predictions from all three models, improving stability and reducing false positives.</p>
-             <p>This project demonstrates how AI can support clinical workflows by providing fast, consistent, and scalable image‑based screening. While not a replacement for medical diagnosis, the model highlights the potential of deep learning to assist healthcare professionals during high‑demand scenarios and improve early detection accuracy. </p>
+    <!-- EXPERIENCE -->
+    <section class="section section-experience" id="experience">
+        <div class="container">
+            <div class="section-label reveal">04 — Experience</div>
+            <h2 class="section-title reveal">Work<br><em>History</em></h2>
+            <div class="exp-card reveal">
+                <div class="exp-header">
+                    <div class="exp-left">
+                        <div class="exp-company">Capgemini</div>
+                        <div class="exp-role">Senior Software Engineer / Senior Analyst</div>
+                        <div class="exp-meta">Hyderabad, India &nbsp;·&nbsp; Aug 2021 – Dec 2023 &nbsp;·&nbsp; Financial Services Domain</div>
+                    </div>
+                    <div class="exp-badge">
+                        <span class="award-badge">⭐ Star Employee H2 2022</span>
+                    </div>
+                </div>
+                <div class="exp-divider"></div>
+                <ul class="exp-list">
+                    <li>Validated REST and microservices‑based systems supporting underwriting, claims, and policy servicing workflows, reducing production issues by <strong>18%</strong>.</li>
+                    <li>Enhanced automation framework using Java, Selenium, and TestNG, improving test execution efficiency by <strong>40%</strong> across regulatory and financial applications.</li>
+                    <li>Built and optimized ETL workflows using Informatica, Python, and SQL, integrating data from Oracle, Snowflake, and other sources into enterprise dashboards.</li>
+                    <li>Implemented process automation using IBM BPM and AWS cloud infrastructure, reducing manual effort and improving scalability.</li>
+                    <li>Designed scalable schemas (Star/Snowflake) and optimized data distribution, improving reporting accuracy and reducing validation cycles.</li>
+                    <li>Supported ingestion pipelines with Apache Kafka for streaming analytics; partnered across web and mainframe (AS400) platforms.</li>
+                    <li>Led UAT cycles for compliance‑critical features, ensuring <strong>100%</strong> requirement‑to‑test coverage using Jira + Xray; authored 1500+ test cases.</li>
+                    <li>Reduced manual data entry by <strong>30%</strong> through workflow automation; documented process flows and metrics for compliance reporting.</li>
+                </ul>
+                <div class="exp-media">
+                    <div class="exp-media-item">
+                        <img src="award.jpeg" alt="Star Employee Award — Capgemini H2 2022" class="exp-img">
+                        <p class="exp-img-caption">⭐ Star Employee Award — H2 2022</p>
+                    </div>
+                    <div class="exp-media-item">
+                        <img src="capgemini.jpeg" alt="At Capgemini" class="exp-img"
+                             onerror="this.closest('.exp-media-item').style.display='none'">
+                        <p class="exp-img-caption">Capgemini, Hyderabad</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project">
-            <h3>Graduate TA Management System</h3>
-            <p>Full‑stack app using Django, PostgreSQL, MongoDB, React.</p>
-            <p> A university’s TA assignment process was heavily manual, involving spreadsheets, emails, and repeated back‑and‑forth between faculty and administrators. This led to scheduling conflicts, inconsistent workload distribution, and significant time spent coordinating assignments each semester. </p>
-            <p>To solve this, I built a full‑stack Graduate TA Management System using Django, PostgreSQL, MongoDB, and React, designed to automate and streamline the entire workflow. The platform includes role‑based access, allowing administrators, faculty, and TAs to interact with the system securely. Also implemented automated assignment logic, conflict detection, and real‑time updates to ensure accurate scheduling and transparency.</p>
-            <p>The responsive React UI improved usability, while Django APIs handled backend validation and data consistency across relational and NoSQL databases. This system reduced manual coordination by 40%, improved scheduling accuracy, and provided a centralized, scalable solution for departmental operations.</p>
+    <!-- EDUCATION -->
+    <section class="section section-education" id="education">
+        <div class="container">
+            <div class="section-label reveal">05 — Education</div>
+            <h2 class="section-title reveal">Academic<br><em>Journey</em></h2>
+            <div class="edu-grid">
+                <div class="edu-cards reveal">
+                    <div class="edu-item edu-item-ms">
+                        <div class="edu-degree">M.S. Computer & Information Sciences</div>
+                        <div class="edu-school">Florida Atlantic University</div>
+                        <div class="edu-year">Boca Raton, Florida &nbsp;·&nbsp; 2023 – 2025</div>
+                        <div class="edu-note">Graduated May 2, 2025</div>
+                    </div>
+                    <div class="edu-item edu-item-btech">
+                        <div class="edu-degree">B.Tech Computer Science & Engineering</div>
+                        <div class="edu-school">Sri Padmavati Mahila Visvavidyalayam</div>
+                        <div class="edu-year">Tirupati, India &nbsp;·&nbsp; 2017 – 2021</div>
+                        <div class="edu-note">Strong foundation in CS fundamentals</div>
+                    </div>
+                </div>
+                <div class="edu-photos reveal">
+                    <div class="grad-grid">
+                        <div class="grad-photo-wrap">
+                            <img src="grad1.jpeg" alt="Graduation" class="grad-photo">
+                        </div>
+                        <div class="grad-photo-wrap">
+                            <img src="gallery13.jpeg" alt="Graduation Day" class="grad-photo">
+                        </div>
+                        <div class="grad-photo-wrap">
+                            <img src="grad3.jpeg" alt="Graduation with FAU mascot" class="grad-photo">
+                        </div>
+                        <div class="grad-photo-wrap">
+                            <img src="grad4.jpeg" alt="Graduation celebration" class="grad-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section section-certs" id="certifications">
+        <div class="container">
+            <div class="section-label reveal">06 — Certifications</div>
+            <h2 class="section-title reveal">Credentials &amp;<br><em>Learning</em></h2>
+            <div class="certs-grid reveal">
+                <div class="cert-item">
+                    <div class="cert-icon">◈</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Azure Data Factory + Synapse Analytics</div>
+                        <div class="cert-source">Udemy</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">◈</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Agile Software Development</div>
+                        <div class="cert-source">Coursera</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">◈</div>
+                    <div class="cert-info">
+                        <div class="cert-name">IBM Data Engineering</div>
+                        <div class="cert-source">Coursera</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">◈</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Python</div>
+                        <div class="cert-source">HackerRank</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-icon">◈</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Informatica PowerCenter</div>
+                        <div class="cert-source">Udemy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <!-- TO ADD MORE PHOTOS: copy any gallery-item div below and update the src + alt -->
+    <section class="section-gallery">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <div class="section-label">08 — Moments</div>
+                <h2 class="section-title">My<br><em>Journey</em></h2>
+                <p class="gallery-sub">Memories, milestones &amp; moments that shaped the journey.</p>
+            </div>
+        </div>
+        <div class="masonry-grid">
+
+            <div class="gallery-item reveal">
+                <img src="gallery5.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery6.jpg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery7.jpeg" alt="Florida Atlantic University" class="gallery-img">
+                <div class="gallery-overlay"><span>Florida Atlantic University</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery8.jpeg" alt="Toast to the Grads — FAU 2025" class="gallery-img">
+                <div class="gallery-overlay"><span>Toast to the Grads — FAU 2025</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery9.jpeg" alt="Graduation Day" class="gallery-img">
+                <div class="gallery-overlay"><span>Graduation Day</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery10.jpeg" alt="Achievement" class="gallery-img">
+                <div class="gallery-overlay"><span>Achievement</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery11.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery12.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery13.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery14.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery15.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery16.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
+            <div class="gallery-item reveal">
+                <img src="gallery17.jpeg" alt="My Journey" class="gallery-img">
+                <div class="gallery-overlay"><span>My Journey</span></div>
+            </div>
+
         </div>
 
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: mekhala9pondala@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/saimekhalapondala</p>
+    <!-- CONTACT -->
+    <section class="section section-contact" id="contact">
+        <div class="container">
+            <div class="contact-inner reveal">
+                <div class="section-label">07 — Contact</div>
+                <h2 class="contact-heading">Let's build<br><em>something great</em></h2>
+                <p class="contact-sub">Open to full‑time software engineering roles, collaborations, and interesting problems to solve.</p>
+                <div class="contact-links">
+                    <a href="mailto:mekhala9pondala@gmail.com" class="contact-link-item">
+                        <span class="contact-link-label">Email</span>
+                        <span class="contact-link-val">mekhala9pondala@gmail.com ↗</span>
+                    </a>
+                    <a href="https://linkedin.com/in/saimekhalapondala" target="_blank" class="contact-link-item">
+                        <span class="contact-link-label">LinkedIn</span>
+                        <span class="contact-link-val">linkedin.com/in/saimekhalapondala ↗</span>
+                    </a>
+                    <a href="https://github.com/mekhala9" target="_blank" class="contact-link-item">
+                        <span class="contact-link-label">GitHub</span>
+                        <span class="contact-link-val">github.com/mekhala9 ↗</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2026 Sai Mekhala Pondala</p>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span>© 2026 Sai Mekhala Pondala</span>
+            <span>Software Engineer · Full‑Stack · Automation · GenAI</span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
